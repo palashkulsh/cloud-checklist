@@ -36,3 +36,9 @@
 * ASG config changed alert
 * ASG instance health check enabled    (so that ASG does not consider unhealthy instance in ASG average cpu calculations used for auto scaling)
 * ASG elb health check enabled          (ASG checks with elb if instance is healthy or not and doesnt consider that instance in cpu calculation)
+
+## Elasticsearch checklist
+* heap should be around 50% (tunable)
+* instances should be termination protect
+* If instances spawned via Auto scaling group then ASG scale in protect should be there to prevent accidental termination (been there faced that)
+* monitoring metrics should be available
