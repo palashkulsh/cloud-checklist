@@ -42,3 +42,9 @@
 * instances should be termination protect
 * If instances spawned via Auto scaling group then ASG scale in protect should be there to prevent accidental termination (been there faced that)
 * monitoring metrics should be available
+
+## jenkins cron job
+* cron expression to run periodically if required
+* description of what cron does
+* retry cron setting to retry in case of failure
+* slack or email integration to notify of failures
