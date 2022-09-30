@@ -42,9 +42,13 @@
 * instances should be termination protect
 * If instances spawned via Auto scaling group then ASG scale in protect should be there to prevent accidental termination (been there faced that)
 * monitoring metrics should be available
+* Data partition is pointed to disk with sufficient intended storage or not? because we have seen that by mistake data partition can point to low size root disk which causes production issues
 
 ## jenkins cron job
 * cron expression to run periodically if required
 * description of what cron does
 * retry cron setting to retry in case of failure
 * slack or email integration to notify of failures
+
+## kafka checklist
+* Data partition is pointed to disk with sufficient intended storage or not? because we have seen that by mistake data partition can point to low size root disk which causes production issues
