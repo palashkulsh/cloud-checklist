@@ -49,6 +49,7 @@
 * description of what cron does
 * retry cron setting to retry in case of failure
 * slack or email integration to notify of failures
+* cron timeouts in jenkins jobs so that jobs doesnt stay stuck forever not leading to any alert
 
 ## kafka checklist
 * Data partition is pointed to disk with sufficient intended storage or not? because we have seen that by mistake data partition can point to low size root disk which causes production issues
