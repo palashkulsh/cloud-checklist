@@ -31,11 +31,14 @@
 
 
 ## ASG checklist
+* ASG auto scaling policy is decided and configured in aws
 * desired=max alert
 * desired=80% of max alert for big ASGS
 * ASG config changed alert
 * ASG instance health check enabled    (so that ASG does not consider unhealthy instance in ASG average cpu calculations used for auto scaling)
 * ASG elb health check enabled          (ASG checks with elb if instance is healthy or not and doesnt consider that instance in cpu calculation)
+* Multiple instance types are allowed in ASG auto scaling
+* ASG instance type prioritisation checkout out in aws.
 
 ## Elasticsearch checklist
 * heap should be around 50% (tunable)
