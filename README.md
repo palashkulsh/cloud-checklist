@@ -23,6 +23,8 @@
 * data type max limit breaching warning and alert in place or not?
 * gtid enabled or not?
 * deadlock scripts in place or not?
+* Disable apparmour as it can restart database due to mem usage restriction.
+* Teams replicating from database given new cluster info (hive , datalake etc)
 
 ## elb checklist
 * donot delete
