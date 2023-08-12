@@ -57,4 +57,9 @@
 * cron timeouts in jenkins jobs so that jobs doesnt stay stuck forever not leading to any alert
 
 ## kafka checklist
-* Data partition is pointed to disk with sufficient intended storage or not? because we have seen that by mistake data partition can point to low size root disk which causes production issues
+* Data partition is pointed to disk with sufficient intended storage or not? because we have seen that by mistake data
+* When adding a new kafka instance along with zookeeper hosted on it. always check that zookeeper has become part of cluster or not
+
+## zookeeper checklist
+* when adding a new zookeeper instance, you will have to add its ip in all of the zookeeper instances , and take restart of complete cluster to make it recognized in the cluster.
+*   partition can point to low size root disk which causes production issues
